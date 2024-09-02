@@ -1,0 +1,66 @@
+span {
+  color: blue;
+}
+.dHome {
+  background-color: rgb(188, 226, 222);
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-size: xx-large;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+.dHeader {
+  background-color: rgb(188, 226, 222);
+}
+.dAbout {
+  color: rgb(19, 98, 90);
+  font-size: 24px;
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.dAbout>img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  border: 5px solid rgba(19, 98, 90, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+  }
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.dFooter {
+  background-color: rgb(188, 226, 222);
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+}
+@media (min-width: 775px) {
+  .dHome {
+    height: 700px;
+  }
+  .dAbout {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .dAbout>img {
+    width: 400px;
+  }
+}
